@@ -1,0 +1,19 @@
+export const AuthConstants = {
+  LOGIN_START: "LOGIN_START",
+  LOGIN_SUCCESS: "LOGIN_SUCCESS",
+  LOGIN_FAILURE: "LOGIN_FAILURE",
+  LOGIN_END: "LOGIN_END",
+  LOGOUT_SUCCESS: "LOGOUT_SUCCESS",
+};
+
+export const TimelineConstants = {
+  GET_START: "GET_START",
+  GET_SUCCESS: "GET_SUCCESS",
+  GET_FAILURE: "GET_FAILURE",
+};
+
+export const MessengerConstants = {
+  GET_START: "GET_START",
+  GET_SUCCESS: "GET_SUCCESS",
+  GET_FAILURE: "GET_FAILURE",
+};

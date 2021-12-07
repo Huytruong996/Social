@@ -1,0 +1,79 @@
+.profile {
+  display: flex;
+  .profileRightTop {
+    position: relative;
+    .profileCover {
+      height: 320px;
+      position: relative;
+      // z-index: 9999;
+      .profileCoverImg {
+        width: 100%;
+        height: 284px;
+        object-fit: cover;
+      }
+      .profileUserImg {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 150px;
+        margin: auto;
+        border: 2px solid #ffff;
+      }
+      .addCoverImage {
+        position: absolute;
+        display: flex;
+        margin-bottom: 16px;
+        padding: 7px;
+        border-radius: 5px;
+        font-weight: 500;
+        margin-right: 20px;
+        cursor: pointer;
+        bottom: 26px;
+        right: 0;
+        color: rgb(7, 7, 7);
+        background-color: rgb(217, 219, 211);
+        .btnAddCoverImg {
+          border: none;
+          background-color: rgb(217, 219, 211);
+        }
+      }
+    }
+    .hr-profileCover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      height: 284px;
+      left: 0;
+      display: flex;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .profileInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .profileInfoName {
+        font-size: 24px;
+      }
+      .profileInfoDesc {
+        font-weight: 300;
+      }
+    }
+  }
+  .profileRight {
+    flex: 9;
+    .profileRightBottom {
+      display: flex;
+      .feed {
+        flex: 10.5;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.loginBox {
+  width: 396px;
+  padding: 20px 0 28px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  text-align: center;
+  .loginInputWrapper {
+    font-size: 17px;
+    width: 364px;
+    margin: auto;
+    padding: 6px 0;
+    display: inline-block;
+    .loginInput {
+      border-radius: 6px;
+      border: 1px solid #dddfe2;
+      background: #ffffff;
+      height: 22px;
+      line-height: 16px;
+      font-size: 17px;
+      padding: 14px 16px;
+      width: 330px;
+      &:focus {
+        border-color: #1877f2;
+        box-shadow: 0 0 0 2px #e7f3ff;
+        caret-color: #1877f2;
+        border-radius: 6px;
+        outline: none !important;
+      }
+    }
+    .loginBtn {
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background: #1877f2;
+      padding: 0 16px;
+      display: inline-block;
+      line-height: 48px;
+      cursor: pointer;
+      color: #fff;
+      font-family: inherit;
+      font-size: 20px;
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+    .loginForgot {
+      color: #1877f2;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .registerBtn {
+      width: 64%;
+      border: none;
+      border-radius: 6px;
+      background: #36a420;
+      padding: 0 16px;
+      display: inline-block;
+      line-height: 48px;
+      cursor: pointer;
+      color: #fff;
+      font-family: inherit;
+      font-size: 20px;
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+  .loginHr {
+    margin: 20px 16px;
+    border-bottom: 1px solid #dadde1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+}

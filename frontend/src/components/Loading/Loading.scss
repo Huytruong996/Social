@@ -1,0 +1,134 @@
+$background-image-skeleton: linear-gradient(
+  to right,
+  #f6f7f8 0%,
+  #edeef1 10%,
+  #f6f7f8 20%,
+  #f6f7f8 100%
+);
+.SkelpostProfileImg,
+.SkelpostUsername,
+.SkelpostDate,
+.likeIcon,
+.postLikeCounter,
+.postCommentText,
+.SkeltonDot {
+  animation: bgPos 1s linear infinite;
+}
+.Skelpost {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0px 16px -8px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 0 0px 16px -8px rgba(0, 0, 0, 0.68);
+  margin: 30px 0;
+  background-image: #31313185;
+  background-size: 200% 100%;
+  .SkelpostWrapper {
+    padding: 10px;
+
+    .SkelpostTop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .SkelpostTopLeft {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .SkelpostProfileImg {
+          background-image: $background-image-skeleton;
+          background-size: 200% 100%;
+          height: 32px;
+          width: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .SkelpostUsername {
+          background-image: $background-image-skeleton;
+          background-size: 200% 100%;
+          width: 20%;
+          height: 10px;
+          font-size: 15px;
+          font-weight: 500;
+          margin: 0 10px;
+          border-radius: 10px;
+        }
+        .SkelpostDate {
+          background-image: $background-image-skeleton;
+          background-size: 200% 100%;
+          width: 10%;
+          height: 10px;
+          border-radius: 10px;
+          font-size: 12px;
+        }
+      }
+      .SkelpostTopRight {
+        display: flex;
+        flex-direction: column;
+        .SkeltonDot {
+          border-radius: 5px;
+          background-image: $background-image-skeleton;
+          background-size: 200% 100%;
+          height: 10px;
+          width: 8px;
+        }
+      }
+    }
+    .SkelpostCenter {
+      margin: 20px 0;
+      .SkelpostImg {
+        margin-top: 20px;
+        width: 100%;
+        max-height: 500px;
+        object-fit: contain;
+      }
+    }
+    .SkelpostBottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 100px;
+      .SkeltopBottomLeft {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .likeIcon {
+          background-image: $background-image-skeleton;
+          background-size: 200% 100%;
+          width: 18px;
+          height: 18px;
+          margin-right: 5px;
+          border-radius: 10px;
+        }
+        .postLikeCounter {
+          background-image: $background-image-skeleton;
+          background-size: 200% 100%;
+          width: 10%;
+          height: 10px;
+          border-radius: 10px;
+        }
+      }
+      .SkeltopBottomRight {
+        align-items: center;
+        display: flex;
+        .postCommentText {
+          background-image: $background-image-skeleton;
+          background-size: 200% 100%;
+          width: 47px;
+          height: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
